@@ -1,0 +1,64 @@
+@font-face {
+  font-family: minecraft;
+  src: url("minecraft.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  background: transparent;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  font: 16px/1.8 minecraft, monospace;
+  color: #fff;
+  padding: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.item.done {
+  opacity: .65;
+}
+
+.title,
+.box,
+textarea {
+  font: inherit;
+  color: inherit;
+  text-shadow: 2px 2px 0 #000;
+  word-spacing: 5px;
+}
+
+.box {
+  user-select: none;
+  white-space: pre;
+}
+
+textarea {
+  flex: 1;
+  background: none;
+  border: 0;
+  outline: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 4px 4px 0;
+  resize: none;
+}
+
+.title {
+  outline: 0;
+}
+
+#list:empty::before {
+  content: "click to add item...";
+  opacity: .65;
+  text-shadow: 2px 2px 0 #000;
+  word-spacing: 5px;
+}
