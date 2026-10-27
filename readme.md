@@ -1,5 +1,7 @@
 a to-do list for obs that i use for my minecraft videos
 
+![demo](demo.gif)
+
 ## usage
 
 on obs: add source > browser > [x] local file > select index.html
